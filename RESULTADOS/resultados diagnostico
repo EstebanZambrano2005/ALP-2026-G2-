@@ -1,0 +1,51 @@
+RESPUESTAS PRUEBA DE DIAGNOSTICO
+
+1. ¿Qué es una clase en Programación Orientada a Objetos?
+Literal: b
+Análisis: Una clase funciona como una plantilla o plano arquitectónico en el software; 
+define genéricamente qué propiedades y acciones tendrán los futuros objetos, a diferencia 
+de una variable primitiva o un archivo ejecutable. 
+2. ¿Qué es un objeto o instancia en POO?
+Literal: c
+Análisis: El objeto es la materialización en la memoria RAM de esa plantilla que representa 
+la clase, dotándolo de una identidad propia y un espacio físico independiente en el sistema. 
+3. ¿Qué estructura conviene usar cuando se sabe de antemano cuántas veces se debe repetir 
+un bloque?
+Literal: c
+Análisis: El bucle for está diseñado específicamente para contadores con un límite de 
+iteraciones conocido o definido previamente, a diferencia de las estructuras condicionales 
+simples. 
+4. ¿Cuál es la diferencia entre una clase y un objeto?
+Literal: a
+Análisis: La clase es abstracta (el molde o diseño conceptual) y el objeto es concreto (la 
+entidad tangible generada a partir de ese molde). 
+5. Un método de una clase recibe un dato entre paréntesis y no devuelve ningún valor. ¿Cómo 
+se llama ese dato que recibe y qué palabra indica que no devuelve nada?
+Literal: c
+Análisis: Los valores de entrada en la firma de una función se denominan parámetros, y la 
+palabra reservada void le indica explícitamente al compilador que el método ejecuta su 
+bloque sin retornar ningún resultado. 
+6. ¿Qué representan los atributos dentro de una clase?
+Literal: b
+Análisis: Funcionan como las variables internas que almacenan las características, 
+propiedades o estado particular de cada objeto. 
+7. ¿A qué se le conoce como el "estado" de un objeto?
+Literal: c
+Análisis: El estado representa los valores específicos que tienen los atributos del objeto en 
+un instante determinado de la ejecución. 
+8. ¿Cuál es la extensión de archivo que genera el compilador de Java tras procesar un archivo 
+java de una clase?
+Literal: c
+Análisis: El compilador de Java (javac) traduce el código fuente .java a bytecode 
+intermedio guardado en archivos con extensión .class. 
+9. Dentro de un archivo de código Java, ¿dónde se deben definir los atributos de una clase?
+Literal: b
+Análisis: Deben declararse directamente en el cuerpo de la clase (dentro de sus llaves 
+principales {}) pero por fuera de los métodos o funciones para que tengan un ámbito de 
+clase (variables de instancia). 
+10. Dos variables de referencia apuntan al mismo objeto. Si se cambia un atributo usando una 
+de ellas, ¿qué ocurre al consultarlo con la otra?
+Literal: b
+Análisis: Como ambas variables de referencia apuntan exactamente al mismo espacio de 
+memoria, cualquier modificación realizada a través de una de ellas afecta y se refleja de 
+inmediato en la otra.
