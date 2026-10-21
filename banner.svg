@@ -66,6 +66,10 @@
       <path d="M 240 80 C 252 76, 266 80, 268 90 C 262 98, 248 98, 240 90 Z"/>
     </g>
     <path id="wave" d="M 826 250 Q 786 218 746 250 T 666 250 T 586 250 T 506 250 T 426 250 T 346 250 T 266 250 L 170 250"/>
+
+    <!-- Máscaras del efecto de escritura -->
+    <clipPath id="type1"><rect x="180" y="138" height="44" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" keyTimes="0;0.05;0.2833;0.9333;0.9334;1" values="0;0;640;640;0;0"/></rect></clipPath>
+    <clipPath id="type2"><rect x="240" y="178" height="36" width="0"><animate attributeName="width" dur="12s" repeatCount="indefinite" keyTimes="0;0.3167;0.5833;0.9333;0.9334;1" values="0;0;520;520;0;0"/></rect></clipPath>
   </defs>
 
   <rect width="1000" height="360" fill="url(#bg)"/>
@@ -88,9 +92,24 @@
     <!-- Separador -->
     <rect x="190" y="130" width="620" height="2" fill="url(#sep)"/>
 
-    <!-- Tema -->
-    <text x="500" y="172" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700" letter-spacing="2" fill="#7dffcf">DIVIDE TU CÓDIGO, DOMINA LA LÓGICA</text>
-    <text x="500" y="204" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="600" letter-spacing="2" fill="#d1fae5">Cada método recibe, ejecuta y devuelve resultados</text>
+    <!-- Tema (efecto de escritura) -->
+    <text x="180" y="172" textLength="640" lengthAdjust="spacing" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="700" fill="#7dffcf" clip-path="url(#type1)">DIVIDE TU CÓDIGO, DOMINA LA LÓGICA</text>
+    <g opacity="0">
+      <animate attributeName="opacity" calcMode="discrete" dur="12s" repeatCount="indefinite" keyTimes="0;0.3167" values="1;0"/>
+      <rect x="180" y="148" width="3" height="28" fill="#00ff9d">
+        <animate attributeName="x" dur="12s" repeatCount="indefinite" keyTimes="0;0.05;0.2833;0.9333;0.9334;1" values="180;180;820;820;180;180"/>
+        <animate attributeName="opacity" calcMode="discrete" dur="0.9s" repeatCount="indefinite" keyTimes="0;0.5" values="1;0"/>
+      </rect>
+    </g>
+
+    <text x="240" y="204" textLength="520" lengthAdjust="spacing" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="600" fill="#d1fae5" clip-path="url(#type2)">Cada método recibe, ejecuta y devuelve resultados</text>
+    <g opacity="0">
+      <animate attributeName="opacity" calcMode="discrete" dur="12s" repeatCount="indefinite" keyTimes="0;0.3167;0.9333" values="0;1;0"/>
+      <rect x="240" y="188" width="3" height="20" fill="#00ff9d">
+        <animate attributeName="x" dur="12s" repeatCount="indefinite" keyTimes="0;0.3167;0.5833;0.9333;0.9334;1" values="240;240;760;760;240;240"/>
+        <animate attributeName="opacity" calcMode="discrete" dur="0.9s" repeatCount="indefinite" keyTimes="0;0.5" values="1;0"/>
+      </rect>
+    </g>
 
     <!-- Tesla volador (derecha, mirando a la derecha) -->
     <g>
