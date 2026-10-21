@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="3400" viewBox="0 0 900 3400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07130f"/>
+      <stop offset="1" stop-color="#0d2e24"/>
+    </linearGradient>
+    <pattern id="p1" width="300" height="112" patternUnits="userSpaceOnUse">
+      <g font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#1FA974" opacity="0.30">
+        <text x="0" y="20">01001101 01100101 01110100 01101111</text>
+        <text x="0" y="48">10110100 11100101 00101101 01001011</text>
+        <text x="0" y="76">01101010 01100001 01110110 01100001</text>
+        <text x="0" y="104">11010010 10011010 01101001 11100010</text>
+      </g>
+      <animateTransform attributeName="patternTransform" type="translate" from="0 0" to="-300 0" dur="40s" repeatCount="indefinite"/>
+    </pattern>
+    <pattern id="p2" width="300" height="112" patternUnits="userSpaceOnUse">
+      <g font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#5EF2A8" opacity="0.14">
+        <text x="0" y="34">00110101 10101100 01110100 01101010</text>
+        <text x="0" y="62">01110110 01101111 01101001 01100100</text>
+        <text x="0" y="90">01001010 01010000 01001111 01001111</text>
+        <text x="0" y="118">00101101 01001011 01100101 01110100</text>
+      </g>
+      <animateTransform attributeName="patternTransform" type="translate" from="-150 0" to="150 0" dur="55s" repeatCount="indefinite"/>
+    </pattern>
+    <style>
+      .page{width:900px;box-sizing:border-box;padding:36px 40px;font-family:'Segoe UI',Arial,sans-serif;color:#D1FAE5;font-size:15px;line-height:1.5}
+      .center{text-align:center}
+      .title{font-size:54px;font-weight:800;letter-spacing:4px;color:#5EF2A8;margin:0}
+      .sub{font-size:21px;font-weight:600;color:#A7F3D0;margin:6px 0 18px}
+      .pill{display:inline-block;padding:5px 14px;border-radius:6px;font-weight:700;font-size:12px;letter-spacing:1.5px;margin:3px;color:#07130f}
+      .p1{background:#00E676}.p2{background:#6EE7B7}.p3{background:#14B8A6}
+      .it{font-style:italic;color:#A7F3D0;font-size:14px;margin:14px 0}
+      .n{display:inline-block;border:1px solid rgba(94,242,168,.45);color:#5EF2A8;padding:5px 12px;border-radius:6px;font-size:13px;margin:3px;background:rgba(7,19,15,.7)}
+      .panel{background:rgba(7,19,15,.72);border:1px solid rgba(94,242,168,.25);border-radius:12px;padding:18px 22px;margin-bottom:22px}
+      h2{font-size:24px;color:#5EF2A8;margin:0 0 12px;padding-bottom:8px;border-bottom:2px solid #1FA974}
+      p{margin:0 0 8px}
+      table{width:100%;border-collapse:collapse;font-size:14px}
+      th{background:rgba(15,61,46,.9);color:#5EF2A8;text-align:left;padding:9px 12px;border:1px solid rgba(94,242,168,.25)}
+      td{padding:9px 12px;border:1px solid rgba(94,242,168,.2)}
+      code{background:rgba(94,242,168,.15);color:#6EE7B7;font-family:Consolas,'Courier New',monospace;padding:1px 6px;border-radius:4px;font-size:13px}
+      pre{background:rgba(2,10,7,.88);border:1px solid rgba(94,242,168,.25);border-radius:8px;padding:12px 16px;font-family:Consolas,'Courier New',monospace;font-size:14px;color:#A7F3D0;margin:10px 0;white-space:pre;line-height:1.45}
+      .k{color:#5EF2A8;font-weight:700}.s{color:#FCD34D}.c{color:#6B8F82}
+      .ok{text-align:center}
+      .foot{text-align:center;font-family:Consolas,monospace;color:#1FA974;font-size:13px;margin-top:6px}
+    </style>
+  </defs>
+
+  <rect width="900" height="3400" fill="url(#bg)"/>
+  <rect width="900" height="3400" fill="url(#p1)"/>
+  <rect width="900" height="3400" fill="url(#p2)"/>
+
+  <foreignObject x="0" y="0" width="900" height="3400">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="page">
+
+      <div class="center">
+        <h1 class="title">☕ MÉTODOS EN JAVA</h1>
+        <div class="sub">Parámetros, <code>void</code> y retorno de valores</div>
+        <span class="pill p1">JAVA · POO</span>
+        <span class="pill p2">TEMA · MÉTODOS</span>
+        <span class="pill p3">EQUIPO · 4 INTEGRANTES</span>
+        <div class="it">Exposición de Algoritmos y Lógica de Programación · Programación Orientada a Objetos</div>
+        <div>
+          <span class="n">Equipo</span><span class="n">Ruta de la clase</span><span class="n">¿Qué es un método?</span><span class="n">Anatomía</span><span class="n">void</span><span class="n">return</span><span class="n">void vs return</span><span class="n">Estructura</span>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:24px">
+        <h2>👥 Equipo</h2>
+        <table>
+          <tr><th>N.º</th><th>Integrante</th><th>Rol en la exposición</th><th>Responsabilidad</th></tr>
+          <tr><td>1</td><td>Kevin Garcés</td><td>Investigar · Analista</td><td>Reunir la teoría y preparar la prueba diagnóstica.</td></tr>
+          <tr><td>2</td><td>Esteban Zambrano</td><td>Preparar · Diseñar</td><td>Armar las diapositivas y ordenar el contenido.</td></tr>
+          <tr><td>3</td><td>Erick Cordonez</td><td>Construir · Programar</td><td>Escribir y probar los ejemplos de código.</td></tr>
+          <tr><td>4</td><td>Cristian Gómez</td><td>Documentar · Archivar</td><td>Elaborar el informe y mantener este README.</td></tr>
+        </table>
+      </div>
+
+      <div class="panel">
+        <h2>🔎 Ruta de la clase</h2>
+        <table>
+          <tr><th>Fase</th><th>Momento</th><th>Qué hacemos</th></tr>
+          <tr><td><code>01</code></td><td>Diagnóstico</td><td>Prueba diagnóstica para medir lo que ya se sabe de métodos.</td></tr>
+          <tr><td><code>02</code></td><td>Teoría</td><td>¿Qué es un método? Anatomía, <code>void</code> y <code>return</code>.</td></tr>
+          <tr><td><code>03</code></td><td>Código</td><td>Ejemplos de código escritos y probados en vivo.</td></tr>
+          <tr><td><code>04</code></td><td>Comparación</td><td><code>void</code> vs <code>return</code>: cuándo usar cada uno.</td></tr>
+          <tr><td><code>05</code></td><td>Cierre</td><td>Conclusiones y preguntas.</td></tr>
+        </table>
+      </div>
+
+      <div class="panel">
+        <h2>🧩 ¿Qué es un método?</h2>
+        <p>Un <b>método</b> es un bloque de código con nombre que realiza una tarea específica y se puede <b>reutilizar</b> las veces que haga falta, sin repetir código.</p>
+        <pre><span class="k">public static void</span> saludar() {
+    System.out.println(<span class="s">"Hola, mundo"</span>);
+}</pre>
+      </div>
+
+      <div class="panel">
+        <h2>🔬 Anatomía de un método</h2>
+        <pre><span class="k">public static int</span> sumar(<span class="k">int</span> a, <span class="k">int</span> b) {
+    <span class="k">return</span> a + b;
+}</pre>
+        <table>
+          <tr><th>Parte</th><th>En el ejemplo</th><th>Función</th></tr>
+          <tr><td>Modificadores</td><td><code>public static</code></td><td>Define el acceso y si pertenece a la clase.</td></tr>
+          <tr><td>Tipo de retorno</td><td><code>int</code></td><td>Tipo de dato que devuelve (<code>void</code> si no devuelve nada).</td></tr>
+          <tr><td>Nombre</td><td><code>sumar</code></td><td>Identifica al método.</td></tr>
+          <tr><td>Parámetros</td><td><code>int a, int b</code></td><td>Datos de entrada.</td></tr>
+          <tr><td>Cuerpo</td><td><code>{ ... }</code></td><td>Instrucciones que ejecuta.</td></tr>
+        </table>
+      </div>
+
+      <div class="panel">
+        <h2>🚫 Métodos <code>void</code></h2>
+        <p>No devuelven ningún valor: <b>ejecutan una acción</b>.</p>
+        <pre><span class="k">public static void</span> mostrarSuma(<span class="k">int</span> a, <span class="k">int</span> b) {
+    System.out.println(<span class="s">"Suma: "</span> + (a + b));
+}</pre>
+      </div>
+
+      <div class="panel">
+        <h2>🔁 Métodos con <code>return</code></h2>
+        <p>Devuelven un valor que puede <b>guardarse o usarse</b> en otra parte del programa.</p>
+        <pre><span class="k">public static int</span> multiplicar(<span class="k">int</span> a, <span class="k">int</span> b) {
+    <span class="k">return</span> a * b;
+}
+
+<span class="c">// Uso</span>
+<span class="k">int</span> resultado = multiplicar(4, 5); <span class="c">// resultado = 20</span></pre>
+      </div>
+
+      <div class="panel">
+        <h2>⚖️ <code>void</code> vs <code>return</code></h2>
+        <table>
+          <tr><th>Característica</th><th class="ok"><code>void</code></th><th class="ok"><code>return</code></th></tr>
+          <tr><td>Devuelve un valor</td><td class="ok">❌</td><td class="ok">✅</td></tr>
+          <tr><td>Tipo de retorno</td><td class="ok"><code>void</code></td><td class="ok"><code>int</code>, <code>double</code>, <code>String</code>...</td></tr>
+          <tr><td>Se puede guardar en una variable</td><td class="ok">❌</td><td class="ok">✅</td></tr>
+          <tr><td>Uso típico</td><td class="ok">Mostrar, imprimir, modificar</td><td class="ok">Calcular y entregar un resultado</td></tr>
+        </table>
+      </div>
+
+      <div class="panel">
+        <h2>📁 Estructura del repositorio</h2>
+        <pre>📦 metodos-en-java
+ ┣ 📂 src
+ ┃ ┣ 📜 Ejemplos.java
+ ┃ ┗ 📜 Main.java
+ ┣ 📂 docs
+ ┃ ┣ 📜 informe.pdf
+ ┃ ┗ 📜 diapositivas.pdf
+ ┗ 📜 README.md</pre>
+      </div>
+
+      <div class="foot">01001010 01100001 01110110 01100001</div>
+
+    </div>
+  </foreignObject>
+</svg>
