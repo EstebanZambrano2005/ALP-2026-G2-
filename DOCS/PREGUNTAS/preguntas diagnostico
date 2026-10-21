@@ -1,0 +1,54 @@
+PRUEBA DE DIAGNOSTICO
+
+1.	¿Qué es una clase en Programación Orientada a Objetos? 
+•	a) Una variable de tipo primitivo que almacena números y texto. 
+•	b) Un molde o plantilla que define las características (atributos) y comportamientos (métodos) de un conjunto de objetos. 
+•	c) Un archivo ejecutable que corre el programa principal. 
+•	d) Una función encargada de imprimir resultados en consola. 
+2.	¿Qué es un objeto o instancia en POO? 
+•	a) Una copia del código fuente guardada en el disco duro. 
+•	b) Una variable global que solo admite valores numéricos. 
+•	c) Una entidad concreta creada en memoria a partir de una clase. 
+•	d) Un paquete de archivos .class de Java. 
+3.	¿Qué estructura conviene usar cuando se sabe de antemano cuántas veces se debe repetir un bloque?  
+a)	if  
+b)	else  
+c)	for  
+d)	Ninguna, no se puede repetir un bloque.  
+4. ¿Cuál es la diferencia entre una clase y un objeto?  
+a)	La clase es un molde que describe atributos y métodos; el objeto es un elemento concreto creado a partir de ese molde.  
+b)	La clase es un elemento concreto y el objeto es el molde.  
+c)	Son exactamente lo mismo.  
+d)	El objeto se escribe en un archivo .java y la clase se crea con new.  
+5.Un método de una clase recibe un dato entre paréntesis y no devuelve ningún valor. ¿Cómo se llama ese dato que recibe y qué palabra indica que no devuelve nada?  
+a) Atributo y static  
+b)	Constructor y new  
+c)	Parámetro y void  
+d)	Referencia y null  
+6.	¿Qué representan los atributos dentro de una clase? 
+•	a) Las acciones que puede ejecutar un programa. 
+•	b) Las características, propiedades o datos de un objeto. 
+•	c) Los bucles y condicionales dentro del código. 
+•	d) Los nombres de las librerías importadas. 
+7.	¿A qué se le conoce como el "estado" de un objeto? 
+•	a) Al número de líneas de código que tiene su clase. 
+•	b) Al estado del compilador al momento de ejecutar el programa. 
+•	c) A los valores actuales que almacenan sus atributos en un momento determinado. 
+•	d) A la ruta en la que está guardado el proyecto. 
+8.	¿Cuál es la extensión de archivo que genera el compilador de Java tras procesar un archivo ?java de una clase? 
+•	a) .exe 
+•	b) .obj 
+•	c) .class 
+•	d) .py 
+9.	Dentro de un archivo de código Java, ¿dónde se deben definir los atributos de una clase? 
+•	a) Fuera del bloque de la clase. 
+•	b) Dentro del cuerpo de la clase (entre sus llaves { }), fuera de cualquier método. 
+•	c) Obligatoriamente dentro del método main. 
+•	d) En un archivo de texto secundario. 
+ 
+10.	Dos variables de referencia apuntan al mismo objeto. Si se cambia un atributo usando una de ellas, ¿qué ocurre al consultarlo con la otra?  
+a) Conserva el valor anterior.  
+b) Muestra el valor nuevo, porque ambas acceden al mismo objeto.  
+c)  Da error.  
+d) Se crea un segundo objeto con el valor nuevo.  
+
