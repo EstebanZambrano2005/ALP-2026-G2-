@@ -3,4 +3,4 @@
   <img src="./banner.svg" alt="Plan de estudio: divide tu código, domina la lógica" width="100%">
 </p>
 
-<img src="docs/assets/readme.svg" width="100%" alt="Métodos en Java">
+<img src="reposit/assets/readme.svg?v=2" width="100%" alt="Métodos en Java">
