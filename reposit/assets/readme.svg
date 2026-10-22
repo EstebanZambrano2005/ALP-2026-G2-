@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="3400" viewBox="0 0 900 3400">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="4590" viewBox="0 0 900 4590">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#07130f"/>
@@ -41,15 +41,24 @@
       pre{background:rgba(2,10,7,.88);border:1px solid rgba(94,242,168,.25);border-radius:8px;padding:12px 16px;font-family:Consolas,'Courier New',monospace;font-size:14px;color:#A7F3D0;margin:10px 0;white-space:pre;line-height:1.45}
       .k{color:#5EF2A8;font-weight:700}.s{color:#FCD34D}.c{color:#6B8F82}
       .ok{text-align:center}
+      .fig{display:block;width:100%;margin:10px 0 6px}
+      .cap{text-align:center;font-size:13px;font-style:italic;color:#A7F3D0;margin:0}
+      .flow{display:flex;align-items:flex-start;justify-content:space-between;margin:16px 0 6px}
+      .step{width:112px;text-align:center}
+      .circ{width:58px;height:58px;border-radius:50%;margin:0 auto 8px;background:#00E676;color:#07130f;font-weight:800;font-size:24px;line-height:58px;border:3px solid #5EF2A8}
+      .circ.b{background:#14B8A6}.circ.g{background:#6EE7B7}
+      .st{font-weight:700;color:#5EF2A8;font-size:14px}
+      .sd{font-size:12px;color:#A7F3D0;line-height:1.35}
+      .arr{color:#5EF2A8;font-size:30px;font-weight:800;line-height:58px}
       .foot{text-align:center;font-family:Consolas,monospace;color:#1FA974;font-size:13px;margin-top:6px}
     </style>
   </defs>
 
-  <rect width="900" height="3400" fill="url(#bg)"/>
-  <rect width="900" height="3400" fill="url(#p1)"/>
-  <rect width="900" height="3400" fill="url(#p2)"/>
+  <rect width="900" height="4590" fill="url(#bg)"/>
+  <rect width="900" height="4590" fill="url(#p1)"/>
+  <rect width="900" height="4590" fill="url(#p2)"/>
 
-  <foreignObject x="0" y="0" width="900" height="3400">
+  <foreignObject x="0" y="0" width="900" height="4590">
     <div xmlns="http://www.w3.org/1999/xhtml" class="page">
 
       <div class="center">
@@ -60,7 +69,7 @@
         <span class="pill p3">EQUIPO · 4 INTEGRANTES</span>
         <div class="it">Exposición de Algoritmos y Lógica de Programación · Programación Orientada a Objetos</div>
         <div>
-          <span class="n">Equipo</span><span class="n">Ruta de la clase</span><span class="n">¿Qué es un método?</span><span class="n">Anatomía</span><span class="n">void</span><span class="n">return</span><span class="n">void vs return</span><span class="n">Estructura</span>
+          <span class="n">Equipo</span><span class="n">Ruta de la clase</span><span class="n">¿Qué es un método?</span><span class="n">Entrada-Proceso-Salida</span><span class="n">Anatomía</span><span class="n">void</span><span class="n">return</span><span class="n">void vs return</span><span class="n">Ciclo del método</span><span class="n">Compilación</span><span class="n">Estructura</span>
         </div>
       </div>
 
@@ -93,6 +102,129 @@
         <pre><span class="k">public static void</span> saludar() {
     System.out.println(<span class="s">"Hola, mundo"</span>);
 }</pre>
+      </div>
+
+      <div class="panel">
+        <h2>⚙️ Entrada → Proceso → Salida</h2>
+        <p>Todo método funciona como una máquina: recibe <b>datos</b> (parámetros), los <b>transforma</b> en el cuerpo y entrega un <b>resultado</b> (<code>return</code>) o ejecuta una acción (<code>void</code>).</p>
+        <div class="fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 442" width="780" height="442" style="width:100%;height:auto;display:block" role="img" aria-label="Entrada, Proceso, Salida">
+<defs>
+<linearGradient id="ipoGlass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5EF2A8" stop-opacity=".16"/><stop offset="1" stop-color="#5EF2A8" stop-opacity=".03"/></linearGradient>
+<radialGradient id="ipoBall" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#D1FAE5"/><stop offset="1" stop-color="#14B8A6"/></radialGradient>
+<linearGradient id="ipoBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07130f"/><stop offset="1" stop-color="#0d2e24"/></linearGradient>
+<g id="ipoCube">
+<polygon points="0,0 24,-24 174,-24 150,0" fill="#5EF2A8" fill-opacity=".22"/>
+<polygon points="150,0 174,-24 174,126 150,150" fill="#14B8A6" fill-opacity=".16"/>
+<rect width="150" height="150" rx="3" fill="url(#ipoGlass)"/>
+<polygon points="-10,150 184,150 174,168 -10,168" fill="#07130f" fill-opacity=".9"/>
+</g>
+<g id="ipoRock">
+<polygon points="-10,-3 -5,-9 3,-10 10,-4 9,5 2,10 -7,8" fill="#0f5a43"/>
+<path d="M-4,-5 L1,1 L6,-2" fill="none" opacity=".6" stroke-width="1"/>
+</g>
+</defs>
+
+<g stroke="#5EF2A8" stroke-width="2" stroke-linejoin="round" fill="none">
+<!-- Cubos de cristal -->
+<use href="#ipoCube" x="55" y="120"/>
+<use href="#ipoCube" x="315" y="120"/>
+<use href="#ipoCube" x="575" y="120"/>
+<!-- INPUT: embudo y rocas -->
+<polygon points="68,38 192,38 147,92 113,92" fill="#5EF2A8" fill-opacity=".15"/>
+<rect x="113" y="92" width="34" height="18" fill="#5EF2A8" fill-opacity=".15"/>
+<ellipse cx="130" cy="38" rx="62" ry="7" fill="#07130f" fill-opacity=".8"/>
+<g stroke-width="1.2">
+<use href="#ipoRock" transform="translate(108 32) scale(1.3)"/>
+<use href="#ipoRock" transform="translate(134 27) scale(1.5)"/>
+<use href="#ipoRock" transform="translate(155 33) scale(1.1)"/>
+<g>
+<animateTransform attributeName="transform" type="translate" values="0,-6;0,22;0,22" keyTimes="0;.6;1" dur="2s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;1;0" keyTimes="0;.6;1" dur="2s" repeatCount="indefinite"/>
+<use href="#ipoRock" transform="translate(130 78) scale(.8)"/>
+</g>
+<use href="#ipoRock" transform="translate(82 252) scale(1.3)"/>
+<use href="#ipoRock" transform="translate(108 254) scale(1.2)"/>
+<use href="#ipoRock" transform="translate(136 250) scale(1.4)"/>
+<use href="#ipoRock" transform="translate(164 253) scale(1.2)"/>
+<use href="#ipoRock" transform="translate(188 255) scale(.9)"/>
+<use href="#ipoRock" transform="translate(96 232) scale(1.1)"/>
+<use href="#ipoRock" transform="translate(124 230) scale(1.2)"/>
+<use href="#ipoRock" transform="translate(152 232) scale(1.2)"/>
+<use href="#ipoRock" transform="translate(176 236) scale(1)"/>
+<use href="#ipoRock" transform="translate(112 212) scale(1)"/>
+<use href="#ipoRock" transform="translate(142 210) scale(1.1)"/>
+<use href="#ipoRock" transform="translate(168 216) scale(.8)"/>
+</g>
+<!-- PROCESS: engranajes (círculo + dientes con trazo discontinuo) -->
+<g transform="translate(368 200)" stroke="#00E676"><g>
+<animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
+<circle r="32" fill="#00E676" fill-opacity=".18"/>
+<circle r="36" stroke-width="8" stroke-dasharray="9.42"/>
+<circle r="13" fill="#07130f"/>
+</g></g>
+<g transform="translate(419 158)" stroke="#14B8A6"><g>
+<animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="9s" repeatCount="indefinite"/>
+<circle r="24" fill="#14B8A6" fill-opacity=".22"/>
+<circle r="27" stroke-width="6" stroke-dasharray="9.42"/>
+<circle r="10" fill="#07130f"/>
+</g></g>
+<g transform="translate(416 234)" stroke="#FCD34D"><g>
+<animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="6.6s" repeatCount="indefinite"/>
+<circle r="17" fill="#FCD34D" fill-opacity=".16"/>
+<circle r="19.5" stroke-width="5" stroke-dasharray="8.75"/>
+<circle r="7" fill="#07130f"/>
+</g></g>
+<g stroke="#FCD34D" stroke-linecap="round"><path d="M452,124 L458,112 M440,120 L441,108 M460,136 L472,132"/></g>
+<!-- OUTPUT: banda transportadora y piezas -->
+<rect x="590" y="232" width="122" height="16" rx="8" fill="#14B8A6" fill-opacity=".35"/>
+<line x1="602" y1="240" x2="700" y2="240" stroke-dasharray="6 8"><animate attributeName="stroke-dashoffset" from="0" to="-28" dur="1.4s" repeatCount="indefinite"/></line>
+<circle cx="600" cy="240" r="9" fill="#07130f"/><circle cx="600" cy="240" r="3" fill="#5EF2A8"/>
+<circle cx="702" cy="240" r="9" fill="#07130f"/><circle cx="702" cy="240" r="3" fill="#5EF2A8"/>
+<circle cx="620" cy="217" r="15" fill="url(#ipoBall)" stroke-width="1.5"/>
+<g stroke-width="1.5">
+<rect x="646" y="210" width="22" height="22" fill="#00E676" fill-opacity=".35"/>
+<polygon points="646,210 653,203 675,203 668,210" fill="#5EF2A8" fill-opacity=".5"/>
+<polygon points="668,210 675,203 675,225 668,232" fill="#14B8A6" fill-opacity=".5"/>
+</g>
+<polygon points="686,232 699,204 712,232" fill="#FCD34D" fill-opacity=".28" stroke="#FCD34D" stroke-width="1.8"/>
+<!-- Flechas entre cubos (flujo animado) -->
+<g stroke-width="4" stroke-dasharray="10 7" stroke-linecap="round">
+<line x1="236" y1="195" x2="304" y2="195"><animate attributeName="stroke-dashoffset" from="34" to="0" dur="1.2s" repeatCount="indefinite"/></line>
+<line x1="494" y1="195" x2="564" y2="195"><animate attributeName="stroke-dashoffset" from="34" to="0" dur="1.2s" repeatCount="indefinite"/></line>
+</g>
+<g fill="#5EF2A8" stroke="none">
+<polygon points="300,185 314,195 300,205"/><polygon points="560,185 574,195 560,205"/>
+<polygon points="124,308 136,308 130,319"/><polygon points="384,308 396,308 390,319"/><polygon points="644,308 656,308 650,319"/>
+</g>
+<path d="M130,292 V312 M390,292 V312 M650,292 V312"/>
+<!-- Tarjetas de explicación -->
+<g fill="#07130f" fill-opacity=".88" stroke-opacity=".45" stroke-width="1.5">
+<rect x="15" y="322" width="230" height="112" rx="8"/>
+<rect x="275" y="322" width="230" height="112" rx="8"/>
+<rect x="535" y="322" width="230" height="112" rx="8"/>
+</g>
+<g stroke="none">
+<rect x="15" y="322" width="6" height="112" rx="3" fill="#00E676"/>
+<rect x="275" y="322" width="6" height="112" rx="3" fill="#14B8A6"/>
+<rect x="535" y="322" width="6" height="112" rx="3" fill="#6EE7B7"/>
+</g>
+</g>
+<g stroke="none" font-family="Consolas,'Courier New',monospace" text-anchor="middle" font-size="13" font-weight="700" fill="#5EF2A8" letter-spacing="1">
+<text x="138" y="283">Input</text><text x="398" y="283">Process</text><text x="658" y="283">Output</text>
+</g>
+<g font-family="'Segoe UI',Arial,sans-serif" font-size="12.5" fill="#D1FAE5">
+<g font-size="14" font-weight="700" fill="#5EF2A8">
+<text x="33" y="344">Entrada (Input)</text><text x="293" y="344">Proceso (Process)</text><text x="553" y="344">Salida (Output)</text>
+</g>
+<text x="33" y="363">Los datos crudos iniciales que</text><text x="33" y="379">da el usuario o el entorno.</text><text x="33" y="395">Lo que la máquina necesita saber.</text>
+<text x="293" y="363">Cálculos, transformaciones y</text><text x="293" y="379">decisiones lógicas. El motor</text><text x="293" y="395">que hace el trabajo.</text>
+<text x="553" y="363">La información transformada y el</text><text x="553" y="379">resultado final entregado.</text><text x="553" y="395">El objetivo cumplido.</text>
+</g>
+<g font-family="Consolas,'Courier New',monospace" font-size="12" font-weight="700" fill="#FCD34D">
+<text x="33" y="424">En Java: parámetros</text><text x="293" y="424">En Java: cuerpo { }</text><text x="553" y="424">En Java: return</text>
+</g>
+</svg></div>
+        <p class="cap">Figura 1. Entrada (parámetros) · Proceso (cuerpo del método) · Salida (<code>return</code>).</p>
       </div>
 
       <div class="panel">
@@ -141,14 +273,117 @@
       </div>
 
       <div class="panel">
+        <h2>🔄 Ciclo de vida de un método</h2>
+        <p>Metodología secuencial: los 5 pasos que sigue todo método, de su creación a su uso.</p>
+        <div class="flow">
+          <div class="step"><div class="circ">1</div><div class="st">Declarar</div><div class="sd">Modificadores, tipo y nombre</div></div>
+          <div class="arr">→</div>
+          <div class="step"><div class="circ b">2</div><div class="st">Parámetros</div><div class="sd">Definir los datos de entrada</div></div>
+          <div class="arr">→</div>
+          <div class="step"><div class="circ g">3</div><div class="st">Cuerpo</div><div class="sd">Escribir las instrucciones</div></div>
+          <div class="arr">→</div>
+          <div class="step"><div class="circ b">4</div><div class="st">void / return</div><div class="sd">Acción o valor de salida</div></div>
+          <div class="arr">→</div>
+          <div class="step"><div class="circ">5</div><div class="st">Invocar</div><div class="sd">Llamarlo desde <code>main</code></div></div>
+        </div>
+        <pre><span class="c">// 1-2. Declarar + parámetros</span>
+<span class="k">public static int</span> restar(<span class="k">int</span> a, <span class="k">int</span> b) {
+    <span class="k">return</span> a - b;          <span class="c">// 3-4. Cuerpo + return</span>
+}
+<span class="c">// 5. Invocar</span>
+<span class="k">int</span> r = restar(9, 4);       <span class="c">// r = 5</span></pre>
+      </div>
+
+      <div class="panel">
+        <h2>🚀 ¿Cómo se ejecuta un programa Java?</h2>
+        <p>Antes de llamar a un método, el código recorre este camino hasta correr en tu equipo.</p>
+        <div class="fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 215" width="780" height="215" style="width:100%;height:auto;display:block" role="img" aria-label="Compilación y ejecución de Java">
+<defs>
+<linearGradient id="jvBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07130f"/><stop offset="1" stop-color="#0d2e24"/></linearGradient>
+<linearGradient id="jvCube" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6EE7B7"/><stop offset="1" stop-color="#00E676"/></linearGradient>
+<g id="jvDoc" stroke-width="2.5">
+<path d="M-35,0 H15 L35,20 V92 H-35 Z" fill="#5EF2A8" fill-opacity=".08"/>
+<path d="M15,0 V20 H35" fill="none"/>
+</g>
+<polygon id="jvArrow" points="0,-8 26,-8 26,-16 46,0 26,16 26,8 0,8" fill="#14B8A6"/>
+<g id="jvRow">
+<rect x="-38" width="76" height="16" rx="5" fill="#07130f" fill-opacity=".9"/>
+<circle cx="-28" cy="8" r="2.5" fill="#00E676" stroke="none"/>
+<path d="M-18,8 H10" stroke="#A7F3D0" stroke-opacity=".6"/><path d="M18,4 V12 M26,4 V12"/>
+</g>
+</defs>
+
+<g stroke="#5EF2A8" stroke-width="2" stroke-linejoin="round" fill="none">
+<!-- 1. Código fuente -->
+<use href="#jvDoc" x="78" y="22"/>
+<g stroke-width="3" stroke-linecap="round" opacity=".85">
+<path d="M52,50 h36 M52,67 h44 M52,84 h40 M52,101 h34"/>
+<path d="M52,58.5 h24 M52,92.5 h20" stroke="#A7F3D0"/><path d="M52,75.5 h30" stroke="#FCD34D"/>
+</g>
+<!-- 2. Compilador -->
+<g transform="translate(234 66)" stroke="#00E676"><g>
+<animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite"/>
+<circle r="21" fill="#00E676" fill-opacity=".2"/><circle r="24" stroke-width="6" stroke-dasharray="7.54"/><circle r="8" fill="#07130f"/>
+</g></g>
+<g transform="translate(186 26)" stroke="#FCD34D"><g><animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="5s" repeatCount="indefinite"/><circle r="9.5" fill="#FCD34D" fill-opacity=".1"/><circle r="11" stroke-width="3" stroke-dasharray="4.32"/><circle r="4" fill="#07130f"/></g></g>
+<g transform="translate(282 26)" stroke="#14B8A6"><g><animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="5s" repeatCount="indefinite"/><circle r="9.5" fill="#14B8A6" fill-opacity=".1"/><circle r="11" stroke-width="3" stroke-dasharray="4.32"/><circle r="4" fill="#07130f"/></g></g>
+<g transform="translate(186 106)" stroke="#14B8A6"><g><animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="5s" repeatCount="indefinite"/><circle r="9.5" fill="#14B8A6" fill-opacity=".1"/><circle r="11" stroke-width="3" stroke-dasharray="4.32"/><circle r="4" fill="#07130f"/></g></g>
+<g transform="translate(282 106)" stroke="#FCD34D"><g><animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="5s" repeatCount="indefinite"/><circle r="9.5" fill="#FCD34D" fill-opacity=".1"/><circle r="11" stroke-width="3" stroke-dasharray="4.32"/><circle r="4" fill="#07130f"/></g></g>
+<path d="M234,30 v-12 m-5,5 l5,-5 l5,5 M234,102 v12 m-5,-5 l5,5 l5,-5 M196,66 h-9 m4,-5 l-5,5 l5,5 M272,66 h9 m-4,-5 l5,5 l-5,5" stroke-width="2.5" stroke-linecap="round"/>
+<!-- 3. Bytecode -->
+<use href="#jvDoc" x="390" y="22"/>
+<!-- 4. JVM -->
+<rect x="496" y="10" width="100" height="112" rx="20" fill="#14B8A6" fill-opacity=".14" stroke-width="2.5"/>
+<use href="#jvRow" x="546" y="62"/><use href="#jvRow" x="546" y="82"/><use href="#jvRow" x="546" y="102"/>
+<polygon points="546,16 565,27 565,49 546,60 527,49 527,27" fill="#00E676" fill-opacity=".25" stroke="#00E676" stroke-width="2.5"><animate attributeName="fill-opacity" values=".25;.1;.25" dur="2.4s" repeatCount="indefinite"/></polygon>
+<polygon points="546,27 556,32.5 556,43.5 546,49 536,43.5 536,32.5" fill="url(#jvCube)" stroke="#07130f" stroke-width="1.5"/>
+<path d="M536,32.5 L546,38 L556,32.5 M546,38 V49" stroke="#07130f" stroke-width="1.5"/>
+<!-- 5. Monitor -->
+<rect x="650" y="14" width="104" height="74" rx="7" fill="#07130f" fill-opacity=".95" stroke-width="2.5"/>
+<path d="M650,29 H754" stroke-width="1" stroke-opacity=".5"/>
+<g stroke="none"><circle cx="660" cy="22" r="2.2" fill="#FCD34D"/><circle cx="668" cy="22" r="2.2" fill="#14B8A6"/><circle cx="676" cy="22" r="2.2" fill="#00E676"/></g>
+<g stroke-width="2.5" stroke-linecap="round"><path d="M658,56 h54" stroke="#A7F3D0" stroke-opacity=".7"/><path d="M658,65 h38" stroke="#00E676"/><path d="M658,74 h68" stroke="#FCD34D" stroke-opacity=".8"/></g>
+<rect x="730" y="70" width="6" height="10" fill="#5EF2A8" stroke="none"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
+<path d="M692,88 L688,104 H716 L712,88" fill="#5EF2A8" fill-opacity=".1" stroke-width="2.5"/>
+<rect x="676" y="104" width="52" height="7" rx="3" fill="#5EF2A8" fill-opacity=".2" stroke-width="2.5"/>
+<circle cx="656" cy="130" r="8" fill="#00E676" stroke="none"/>
+<path d="M652,130 l3,3.5 l6,-7" stroke="#07130f" stroke-width="2.2" stroke-linecap="round"/>
+<!-- Flechas (se iluminan en secuencia) -->
+<g stroke-width="2">
+<use href="#jvArrow" x="134" y="64"><animate attributeName="fill-opacity" values=".3;1;.3" dur="4s" begin="0s" repeatCount="indefinite"/></use>
+<use href="#jvArrow" x="290" y="64"><animate attributeName="fill-opacity" values=".3;1;.3" dur="4s" begin="1s" repeatCount="indefinite"/></use>
+<use href="#jvArrow" x="446" y="64"><animate attributeName="fill-opacity" values=".3;1;.3" dur="4s" begin="2s" repeatCount="indefinite"/></use>
+<use href="#jvArrow" x="602" y="64"><animate attributeName="fill-opacity" values=".3;1;.3" dur="4s" begin="3s" repeatCount="indefinite"/></use>
+</g>
+</g>
+<g font-family="Consolas,'Courier New',monospace" font-size="9.5" fill="#5EF2A8" fill-opacity=".9">
+<text x="362" y="55">01100001<tspan x="362" dy="9">00110100</tspan><tspan x="362" dy="9">10010110</tspan><tspan x="362" dy="9">01001010</tspan><tspan x="362" dy="9">01101001</tspan><tspan x="362" dy="9">00101101</tspan><tspan x="362" dy="9">01100110</tspan></text>
+<text x="658" y="46" font-size="10">$ java Main</text>
+</g>
+<text x="668" y="134" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="#A7F3D0">Ejecución exitosa</text>
+<g text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14.5" font-weight="700" fill="#5EF2A8">
+<text x="78" y="168">1. Código Fuente</text><text x="234" y="168">2. Compilador</text><text x="390" y="168">3. Bytecode</text><text x="546" y="168">4. JVM</text><text x="702" y="168">5. Ejecución</text>
+</g>
+<g text-anchor="middle" font-family="Consolas,'Courier New',monospace" font-size="12" fill="#FCD34D">
+<text x="78" y="187">(.java)</text><text x="234" y="187">(javac)</text><text x="390" y="187">(.class)</text><text x="546" y="187">(Java Virtual Machine)</text><text x="702" y="187">(Sistema Operativo)</text>
+</g>
+</svg></div>
+        <p class="cap">Figura 2. Código fuente <code>.java</code> → <code>javac</code> → bytecode <code>.class</code> → JVM → ejecución.</p>
+      </div>
+
+      <div class="panel">
         <h2>📁 Estructura del repositorio</h2>
-        <pre>📦 metodos-en-java
- ┣ 📂 src
- ┃ ┣ 📜 Ejemplos.java
- ┃ ┗ 📜 Main.java
- ┣ 📂 docs
- ┃ ┣ 📜 informe.pdf
- ┃ ┗ 📜 diapositivas.pdf
+        <pre>📦 ALP-2026-G2-
+ ┣ 📂 reposit
+ ┃ ┗ 📂 assets
+ ┃   ┗ 📜 readme.svg
+ ┣ 📂 Docs
+ ┃ ┣ 📂 CLASE1
+ ┃ ┣ 📂 CLASE2
+ ┃ ┣ 📂 INVESTIGACION
+ ┃ ┗ 📂 PREGUNTAS
+ ┣ 📂 EVIDENCIAS
+ ┣ 📂 PREGUNTAS
  ┗ 📜 README.md</pre>
       </div>
 
