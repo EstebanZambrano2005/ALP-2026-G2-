@@ -1,258 +1,152 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="4590" viewBox="0 0 900 4590">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#07130f"/>
-      <stop offset="1" stop-color="#0d2e24"/>
-    </linearGradient>
-    <pattern id="p1" width="300" height="112" patternUnits="userSpaceOnUse">
-      <g font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#1FA974" opacity="0.30">
-        <text x="0" y="20">01001101 01100101 01110100 01101111</text>
-        <text x="0" y="48">10110100 11100101 00101101 01001011</text>
-        <text x="0" y="76">01101010 01100001 01110110 01100001</text>
-        <text x="0" y="104">11010010 10011010 01101001 11100010</text>
-      </g>
-      <animateTransform attributeName="patternTransform" type="translate" from="0 0" to="-300 0" dur="40s" repeatCount="indefinite"/>
-    </pattern>
-    <pattern id="p2" width="300" height="112" patternUnits="userSpaceOnUse">
-      <g font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#5EF2A8" opacity="0.14">
-        <text x="0" y="34">00110101 10101100 01110100 01101010</text>
-        <text x="0" y="62">01110110 01101111 01101001 01100100</text>
-        <text x="0" y="90">01001010 01010000 01001111 01001111</text>
-        <text x="0" y="118">00101101 01001011 01100101 01110100</text>
-      </g>
-      <animateTransform attributeName="patternTransform" type="translate" from="-150 0" to="150 0" dur="55s" repeatCount="indefinite"/>
-    </pattern>
-    <style>
-      .page{width:900px;box-sizing:border-box;padding:36px 40px;font-family:'Segoe UI',Arial,sans-serif;color:#D1FAE5;font-size:15px;line-height:1.5}
-      .center{text-align:center}
-      .title{font-size:54px;font-weight:800;letter-spacing:4px;color:#5EF2A8;margin:0}
-      .sub{font-size:21px;font-weight:600;color:#A7F3D0;margin:6px 0 18px}
-      .pill{display:inline-block;padding:5px 14px;border-radius:6px;font-weight:700;font-size:12px;letter-spacing:1.5px;margin:3px;color:#07130f}
-      .p1{background:#00E676}.p2{background:#6EE7B7}.p3{background:#14B8A6}
-      .it{font-style:italic;color:#A7F3D0;font-size:14px;margin:14px 0}
-      .n{display:inline-block;border:1px solid rgba(94,242,168,.45);color:#5EF2A8;padding:5px 12px;border-radius:6px;font-size:13px;margin:3px;background:rgba(7,19,15,.7)}
-      .panel{background:rgba(7,19,15,.72);border:1px solid rgba(94,242,168,.25);border-radius:12px;padding:18px 22px;margin-bottom:22px}
-      h2{font-size:24px;color:#5EF2A8;margin:0 0 12px;padding-bottom:8px;border-bottom:2px solid #1FA974}
-      p{margin:0 0 8px}
-      table{width:100%;border-collapse:collapse;font-size:14px}
-      th{background:rgba(15,61,46,.9);color:#5EF2A8;text-align:left;padding:9px 12px;border:1px solid rgba(94,242,168,.25)}
-      td{padding:9px 12px;border:1px solid rgba(94,242,168,.2)}
-      code{background:rgba(94,242,168,.15);color:#6EE7B7;font-family:Consolas,'Courier New',monospace;padding:1px 6px;border-radius:4px;font-size:13px}
-      pre{background:rgba(2,10,7,.88);border:1px solid rgba(94,242,168,.25);border-radius:8px;padding:12px 16px;font-family:Consolas,'Courier New',monospace;font-size:14px;color:#A7F3D0;margin:10px 0;white-space:pre;line-height:1.45}
-      .k{color:#5EF2A8;font-weight:700}.s{color:#FCD34D}.c{color:#6B8F82}
-      .ok{text-align:center}
-      .fig{display:block;width:100%;margin:10px 0 6px}
-      .cap{text-align:center;font-size:13px;font-style:italic;color:#A7F3D0;margin:0}
-      .flow{display:flex;align-items:flex-start;justify-content:space-between;margin:16px 0 6px}
-      .step{width:112px;text-align:center}
-      .circ{width:58px;height:58px;border-radius:50%;margin:0 auto 8px;background:#00E676;color:#07130f;font-weight:800;font-size:24px;line-height:58px;border:3px solid #5EF2A8}
-      .circ.b{background:#14B8A6}.circ.g{background:#6EE7B7}
-      .st{font-weight:700;color:#5EF2A8;font-size:14px}
-      .sd{font-size:12px;color:#A7F3D0;line-height:1.35}
-      .arr{color:#5EF2A8;font-size:30px;font-weight:800;line-height:58px}
-      .foot{text-align:center;font-family:Consolas,monospace;color:#1FA974;font-size:13px;margin-top:6px}
-    </style>
-  </defs>
-
-  <rect width="900" height="4590" fill="url(#bg)"/>
-  <rect width="900" height="4590" fill="url(#p1)"/>
-  <rect width="900" height="4590" fill="url(#p2)"/>
-
-  <foreignObject x="0" y="0" width="900" height="4590">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 3900" width="100%">
+  <foreignObject x="0" y="0" width="900" height="3900">
     <div xmlns="http://www.w3.org/1999/xhtml" class="page">
+      <style>
+        .page{width:900px;box-sizing:border-box;background:#07130f;color:#d1fae5;font-family:'Segoe UI',Arial,sans-serif;position:relative;overflow:hidden;padding:0 28px 28px}
+        .rain{position:absolute;top:0;left:0;right:0;height:360px;overflow:hidden;font-family:Consolas,'Courier New',monospace;font-size:11px;line-height:1.55;letter-spacing:1px;color:#0f6b52;opacity:.5;white-space:nowrap;-webkit-mask-image:linear-gradient(#000 40%,transparent);mask-image:linear-gradient(#000 40%,transparent)}
+        .hero{position:relative;text-align:center;padding:50px 0 24px}
+        .cup{position:absolute;left:96px;top:70px;font-size:54px}
+        .title{margin:0;font-size:56px;font-weight:800;letter-spacing:3px;background:linear-gradient(90deg,#00e676,#7dffcf);-webkit-background-clip:text;background-clip:text;color:transparent}
+        .sub{font-size:21px;font-weight:600;color:#a7f3d0;margin:14px 0 18px}
+        .badge{display:inline-block;padding:6px 16px;border-radius:999px;font-weight:800;font-size:13px;letter-spacing:1.5px;margin:0 5px;color:#04100c}
+        .b1{background:#00e676}.b2{background:#7dffcf}.b3{background:#14b8a6}
+        .tag{font-style:italic;font-size:14px;color:#a7f3d0;margin:18px 0 6px}
+        .nav{margin-top:12px}
+        .nav span{display:inline-block;border:1px solid #0e7a5e;border-radius:9px;padding:6px 14px;margin:4px;font-size:13px;color:#a7f3d0;background:rgba(0,230,118,.06)}
+        .panel{position:relative;background:rgba(9,38,29,.78);border:1px solid #0e5a45;border-radius:14px;padding:20px 24px;margin:0 0 18px}
+        .panel h2{font-size:22px;color:#5ef2a8;margin:0 0 12px;padding-bottom:8px;border-bottom:2px solid #0e7a5e}
+        .panel p{margin:0 0 8px;font-size:15px;line-height:1.55}
+        code{font-family:Consolas,'Courier New',monospace;background:#0b2a21;color:#7dffcf;border-radius:5px;padding:1px 6px;font-size:.92em}
+        pre{font-family:Consolas,'Courier New',monospace;font-size:14px;line-height:1.55;background:#04100c;border:1px solid #0e5a45;border-radius:10px;padding:14px 16px;margin:12px 0 0;color:#d1fae5;white-space:pre}
+        .k{color:#00e676;font-weight:700}.c{color:#6aa396;font-style:italic}.s{color:#fcd34d}
+        table{width:100%;border-collapse:collapse;font-size:14px}
+        th{background:#0e392b;color:#5ef2a8;text-align:left;padding:9px 12px}
+        td{padding:9px 12px;border-bottom:1px solid #0e3a2c}
+        .ok{text-align:center}
+        .flow{display:flex;align-items:flex-start;justify-content:space-between;margin:14px 0 4px}
+        .step{flex:1;text-align:center;padding:0 4px}
+        .circ{width:38px;height:38px;border-radius:50%;margin:0 auto 8px;line-height:38px;font-weight:800;color:#04100c;background:#00e676}
+        .circ.b{background:#14b8a6}.circ.g{background:#fcd34d}
+        .st{font-weight:700;color:#a7f3d0;font-size:14px}
+        .sd{font-size:12px;color:#8fd9bd;margin-top:2px}
+        .arr{color:#00e676;font-size:22px;padding-top:4px}
+        .fig{margin-top:12px}
+        .cap{text-align:center;font-size:12.5px;color:#8fd9bd;margin:8px 0 0;font-style:italic}
+        .foot{text-align:center;font-family:Consolas,'Courier New',monospace;color:#0e7a5e;letter-spacing:3px;padding:18px 0 4px;font-size:13px}
+      </style>
 
-      <div class="center">
-        <h1 class="title">☕ MÉTODOS EN JAVA</h1>
+      <div class="hero">
+        <div class="rain">
+          01101001 01001010 01100001 01110110 01100001 00110101 11010010 01010101 00101101 01101110 10010110 01001001 01110000<br/>
+          10010110 01010000 01001111 01001111 00100000 01101101 01100101 01110100 01101111 01100100 01101111 01110011 00110010<br/>
+          00101101 01110000 01100001 01110010 01100001 01101101 01100101 01110100 01110010 01101111 01110011 01011010 11001010<br/>
+          01110110 01101111 01101001 01100100 00100000 01110010 01100101 01110100 01110101 01110010 01101110 00101011 01001101<br/>
+          11010010 01001010 01010110 01001101 00110001 10101010 01100001 01110110 01100001 00100000 01001010 01010110 01001101<br/>
+          01010101 00101101 01101110 10010110 01001001 01110000 01101001 01001010 01100001 01110110 01100001 00110101 11010010<br/>
+          00110010 10010110 01010000 01001111 01001111 00100000 01101101 01100101 01110100 01101111 01100100 01101111 01110011<br/>
+          01011010 11001010 00101101 01110000 01100001 01110010 01100001 01101101 01100101 01110100 01110010 01101111 01110011<br/>
+          00101011 01001101 01110110 01101111 01101001 01100100 00100000 01110010 01100101 01110100 01110101 01110010 01101110<br/>
+          01001101 11010010 01001010 01010110 01001101 00110001 10101010 01100001 01110110 01100001 00100000 01001010 01010110<br/>
+          01110000 01010101 00101101 01101110 10010110 01001001 01101001 01001010 01100001 01110110 01100001 00110101 11010010<br/>
+          01110011 00110010 10010110 01010000 01001111 01001111 00100000 01101101 01100101 01110100 01101111 01100100 01101111
+        </div>
+        <div class="cup">☕</div>
+        <h1 class="title">MÉTODOS EN JAVA</h1>
         <div class="sub">Parámetros, <code>void</code> y retorno de valores</div>
-        <span class="pill p1">JAVA · POO</span>
-        <span class="pill p2">TEMA · MÉTODOS</span>
-        <span class="pill p3">EQUIPO · 4 INTEGRANTES</span>
-        <div class="it">Exposición de Algoritmos y Lógica de Programación · Programación Orientada a Objetos</div>
         <div>
-          <span class="n">Equipo</span><span class="n">Ruta de la clase</span><span class="n">¿Qué es un método?</span><span class="n">Entrada-Proceso-Salida</span><span class="n">Anatomía</span><span class="n">void</span><span class="n">return</span><span class="n">void vs return</span><span class="n">Ciclo del método</span><span class="n">Compilación</span><span class="n">Estructura</span>
+          <span class="badge b1">JAVA · POO</span>
+          <span class="badge b2">TEMA · MÉTODOS</span>
+          <span class="badge b3">EQUIPO · 4 INTEGRANTES</span>
+        </div>
+        <div class="tag">Exposición de Algoritmos y Lógica de Programación · Programación Orientada a Objetos</div>
+        <div class="nav">
+          <span>Equipo</span><span>Ruta de la clase</span><span>¿Qué es un método?</span><span>Entrada-Proceso-Salida</span><span>Anatomía</span><span>void</span><span>return</span><span>void vs return</span><span>Ciclo del método</span><span>Compilación</span><span>Estructura</span>
         </div>
       </div>
 
-      <div class="panel" style="margin-top:24px">
+      <div class="panel">
         <h2>👥 Equipo</h2>
         <table>
-          <tr><th>N.º</th><th>Integrante</th><th>Rol en la exposición</th><th>Responsabilidad</th></tr>
+          <tr><th>N.°</th><th>Integrante</th><th>Rol en la exposición</th><th>Responsabilidad</th></tr>
           <tr><td>1</td><td>Kevin Garcés</td><td>Investigar · Analista</td><td>Reunir la teoría y preparar la prueba diagnóstica.</td></tr>
           <tr><td>2</td><td>Esteban Zambrano</td><td>Preparar · Diseñar</td><td>Armar las diapositivas y ordenar el contenido.</td></tr>
-          <tr><td>3</td><td>Erick Cordonez</td><td>Construir · Programar</td><td>Escribir y probar los ejemplos de código.</td></tr>
-          <tr><td>4</td><td>Cristian Gómez</td><td>Documentar · Archivar</td><td>Elaborar el informe y mantener este README.</td></tr>
+          <tr><td>3</td><td>Cristian Gómez</td><td>Programar · Demostrar</td><td>Desarrollar la clase Calculadora/Producto y la dinámica de completar código.</td></tr>
+          <tr><td>4</td><td>Erick Cordonez</td><td>Evaluar · Documentar</td><td>Preparar el Quizizz y mantener el repositorio y las evidencias.</td></tr>
         </table>
       </div>
 
       <div class="panel">
-        <h2>🔎 Ruta de la clase</h2>
-        <table>
-          <tr><th>Fase</th><th>Momento</th><th>Qué hacemos</th></tr>
-          <tr><td><code>01</code></td><td>Diagnóstico</td><td>Prueba diagnóstica para medir lo que ya se sabe de métodos.</td></tr>
-          <tr><td><code>02</code></td><td>Teoría</td><td>¿Qué es un método? Anatomía, <code>void</code> y <code>return</code>.</td></tr>
-          <tr><td><code>03</code></td><td>Código</td><td>Ejemplos de código escritos y probados en vivo.</td></tr>
-          <tr><td><code>04</code></td><td>Comparación</td><td><code>void</code> vs <code>return</code>: cuándo usar cada uno.</td></tr>
-          <tr><td><code>05</code></td><td>Cierre</td><td>Conclusiones y preguntas.</td></tr>
-        </table>
+        <h2>🗺️ Ruta de la clase</h2>
+        <p>Cinco momentos para pasar de la teoría a la práctica.</p>
+        <div class="flow">
+          <div class="step"><div class="circ">1</div><div class="st">Diagnóstico</div><div class="sd">Prueba inicial de métodos</div></div>
+          <div class="arr">→</div>
+          <div class="step"><div class="circ b">2</div><div class="st">Exposición</div><div class="sd">Parámetros, void y return</div></div>
+          <div class="arr">→</div>
+          <div class="step"><div class="circ g">3</div><div class="st">Completar código</div><div class="sd">Dinámica con el grupo</div></div>
+          <div class="arr">→</div>
+          <div class="step"><div class="circ b">4</div><div class="st">Calculadora / Producto</div><div class="sd">Clase en acción</div></div>
+          <div class="arr">→</div>
+          <div class="step"><div class="circ">5</div><div class="st">Quizizz</div><div class="sd">Evaluación final</div></div>
+        </div>
       </div>
 
       <div class="panel">
-        <h2>🧩 ¿Qué es un método?</h2>
-        <p>Un <b>método</b> es un bloque de código con nombre que realiza una tarea específica y se puede <b>reutilizar</b> las veces que haga falta, sin repetir código.</p>
-        <pre><span class="k">public static void</span> saludar() {
-    System.out.println(<span class="s">"Hola, mundo"</span>);
-}</pre>
+        <h2>💡 ¿Qué es un método?</h2>
+        <p>Un método es un bloque de código con nombre que realiza una tarea concreta. Se escribe una sola vez y se puede llamar (invocar) cuantas veces haga falta.</p>
+        <p>Sirve para <code>reutilizar</code> código, <code>ordenar</code> el programa y <code>probar</code> cada parte por separado.</p>
+        <pre><span class="c">// Declarar el método</span>
+<span class="k">public static void</span> saludar() {
+    System.out.println(<span class="s">"Hola, Java"</span>);
+}
+<span class="c">// Invocarlo desde main</span>
+saludar();</pre>
       </div>
 
       <div class="panel">
-        <h2>⚙️ Entrada → Proceso → Salida</h2>
-        <p>Todo método funciona como una máquina: recibe <b>datos</b> (parámetros), los <b>transforma</b> en el cuerpo y entrega un <b>resultado</b> (<code>return</code>) o ejecuta una acción (<code>void</code>).</p>
-        <div class="fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 442" width="780" height="442" style="width:100%;height:auto;display:block" role="img" aria-label="Entrada, Proceso, Salida">
-<defs>
-<linearGradient id="ipoGlass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5EF2A8" stop-opacity=".16"/><stop offset="1" stop-color="#5EF2A8" stop-opacity=".03"/></linearGradient>
-<radialGradient id="ipoBall" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#D1FAE5"/><stop offset="1" stop-color="#14B8A6"/></radialGradient>
-<linearGradient id="ipoBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07130f"/><stop offset="1" stop-color="#0d2e24"/></linearGradient>
-<g id="ipoCube">
-<polygon points="0,0 24,-24 174,-24 150,0" fill="#5EF2A8" fill-opacity=".22"/>
-<polygon points="150,0 174,-24 174,126 150,150" fill="#14B8A6" fill-opacity=".16"/>
-<rect width="150" height="150" rx="3" fill="url(#ipoGlass)"/>
-<polygon points="-10,150 184,150 174,168 -10,168" fill="#07130f" fill-opacity=".9"/>
-</g>
-<g id="ipoRock">
-<polygon points="-10,-3 -5,-9 3,-10 10,-4 9,5 2,10 -7,8" fill="#0f5a43"/>
-<path d="M-4,-5 L1,1 L6,-2" fill="none" opacity=".6" stroke-width="1"/>
-</g>
-</defs>
-
-<g stroke="#5EF2A8" stroke-width="2" stroke-linejoin="round" fill="none">
-<!-- Cubos de cristal -->
-<use href="#ipoCube" x="55" y="120"/>
-<use href="#ipoCube" x="315" y="120"/>
-<use href="#ipoCube" x="575" y="120"/>
-<!-- INPUT: embudo y rocas -->
-<polygon points="68,38 192,38 147,92 113,92" fill="#5EF2A8" fill-opacity=".15"/>
-<rect x="113" y="92" width="34" height="18" fill="#5EF2A8" fill-opacity=".15"/>
-<ellipse cx="130" cy="38" rx="62" ry="7" fill="#07130f" fill-opacity=".8"/>
-<g stroke-width="1.2">
-<use href="#ipoRock" transform="translate(108 32) scale(1.3)"/>
-<use href="#ipoRock" transform="translate(134 27) scale(1.5)"/>
-<use href="#ipoRock" transform="translate(155 33) scale(1.1)"/>
-<g>
-<animateTransform attributeName="transform" type="translate" values="0,-6;0,22;0,22" keyTimes="0;.6;1" dur="2s" repeatCount="indefinite"/>
-<animate attributeName="opacity" values="1;1;0" keyTimes="0;.6;1" dur="2s" repeatCount="indefinite"/>
-<use href="#ipoRock" transform="translate(130 78) scale(.8)"/>
-</g>
-<use href="#ipoRock" transform="translate(82 252) scale(1.3)"/>
-<use href="#ipoRock" transform="translate(108 254) scale(1.2)"/>
-<use href="#ipoRock" transform="translate(136 250) scale(1.4)"/>
-<use href="#ipoRock" transform="translate(164 253) scale(1.2)"/>
-<use href="#ipoRock" transform="translate(188 255) scale(.9)"/>
-<use href="#ipoRock" transform="translate(96 232) scale(1.1)"/>
-<use href="#ipoRock" transform="translate(124 230) scale(1.2)"/>
-<use href="#ipoRock" transform="translate(152 232) scale(1.2)"/>
-<use href="#ipoRock" transform="translate(176 236) scale(1)"/>
-<use href="#ipoRock" transform="translate(112 212) scale(1)"/>
-<use href="#ipoRock" transform="translate(142 210) scale(1.1)"/>
-<use href="#ipoRock" transform="translate(168 216) scale(.8)"/>
-</g>
-<!-- PROCESS: engranajes (círculo + dientes con trazo discontinuo) -->
-<g transform="translate(368 200)" stroke="#00E676"><g>
-<animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
-<circle r="32" fill="#00E676" fill-opacity=".18"/>
-<circle r="36" stroke-width="8" stroke-dasharray="9.42"/>
-<circle r="13" fill="#07130f"/>
-</g></g>
-<g transform="translate(419 158)" stroke="#14B8A6"><g>
-<animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="9s" repeatCount="indefinite"/>
-<circle r="24" fill="#14B8A6" fill-opacity=".22"/>
-<circle r="27" stroke-width="6" stroke-dasharray="9.42"/>
-<circle r="10" fill="#07130f"/>
-</g></g>
-<g transform="translate(416 234)" stroke="#FCD34D"><g>
-<animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="6.6s" repeatCount="indefinite"/>
-<circle r="17" fill="#FCD34D" fill-opacity=".16"/>
-<circle r="19.5" stroke-width="5" stroke-dasharray="8.75"/>
-<circle r="7" fill="#07130f"/>
-</g></g>
-<g stroke="#FCD34D" stroke-linecap="round"><path d="M452,124 L458,112 M440,120 L441,108 M460,136 L472,132"/></g>
-<!-- OUTPUT: banda transportadora y piezas -->
-<rect x="590" y="232" width="122" height="16" rx="8" fill="#14B8A6" fill-opacity=".35"/>
-<line x1="602" y1="240" x2="700" y2="240" stroke-dasharray="6 8"><animate attributeName="stroke-dashoffset" from="0" to="-28" dur="1.4s" repeatCount="indefinite"/></line>
-<circle cx="600" cy="240" r="9" fill="#07130f"/><circle cx="600" cy="240" r="3" fill="#5EF2A8"/>
-<circle cx="702" cy="240" r="9" fill="#07130f"/><circle cx="702" cy="240" r="3" fill="#5EF2A8"/>
-<circle cx="620" cy="217" r="15" fill="url(#ipoBall)" stroke-width="1.5"/>
-<g stroke-width="1.5">
-<rect x="646" y="210" width="22" height="22" fill="#00E676" fill-opacity=".35"/>
-<polygon points="646,210 653,203 675,203 668,210" fill="#5EF2A8" fill-opacity=".5"/>
-<polygon points="668,210 675,203 675,225 668,232" fill="#14B8A6" fill-opacity=".5"/>
-</g>
-<polygon points="686,232 699,204 712,232" fill="#FCD34D" fill-opacity=".28" stroke="#FCD34D" stroke-width="1.8"/>
-<!-- Flechas entre cubos (flujo animado) -->
-<g stroke-width="4" stroke-dasharray="10 7" stroke-linecap="round">
-<line x1="236" y1="195" x2="304" y2="195"><animate attributeName="stroke-dashoffset" from="34" to="0" dur="1.2s" repeatCount="indefinite"/></line>
-<line x1="494" y1="195" x2="564" y2="195"><animate attributeName="stroke-dashoffset" from="34" to="0" dur="1.2s" repeatCount="indefinite"/></line>
-</g>
-<g fill="#5EF2A8" stroke="none">
-<polygon points="300,185 314,195 300,205"/><polygon points="560,185 574,195 560,205"/>
-<polygon points="124,308 136,308 130,319"/><polygon points="384,308 396,308 390,319"/><polygon points="644,308 656,308 650,319"/>
-</g>
-<path d="M130,292 V312 M390,292 V312 M650,292 V312"/>
-<!-- Tarjetas de explicación -->
-<g fill="#07130f" fill-opacity=".88" stroke-opacity=".45" stroke-width="1.5">
-<rect x="15" y="322" width="230" height="112" rx="8"/>
-<rect x="275" y="322" width="230" height="112" rx="8"/>
-<rect x="535" y="322" width="230" height="112" rx="8"/>
-</g>
-<g stroke="none">
-<rect x="15" y="322" width="6" height="112" rx="3" fill="#00E676"/>
-<rect x="275" y="322" width="6" height="112" rx="3" fill="#14B8A6"/>
-<rect x="535" y="322" width="6" height="112" rx="3" fill="#6EE7B7"/>
-</g>
-</g>
-<g stroke="none" font-family="Consolas,'Courier New',monospace" text-anchor="middle" font-size="13" font-weight="700" fill="#5EF2A8" letter-spacing="1">
-<text x="138" y="283">Input</text><text x="398" y="283">Process</text><text x="658" y="283">Output</text>
-</g>
-<g font-family="'Segoe UI',Arial,sans-serif" font-size="12.5" fill="#D1FAE5">
-<g font-size="14" font-weight="700" fill="#5EF2A8">
-<text x="33" y="344">Entrada (Input)</text><text x="293" y="344">Proceso (Process)</text><text x="553" y="344">Salida (Output)</text>
-</g>
-<text x="33" y="363">Los datos crudos iniciales que</text><text x="33" y="379">da el usuario o el entorno.</text><text x="33" y="395">Lo que la máquina necesita saber.</text>
-<text x="293" y="363">Cálculos, transformaciones y</text><text x="293" y="379">decisiones lógicas. El motor</text><text x="293" y="395">que hace el trabajo.</text>
-<text x="553" y="363">La información transformada y el</text><text x="553" y="379">resultado final entregado.</text><text x="553" y="395">El objetivo cumplido.</text>
-</g>
-<g font-family="Consolas,'Courier New',monospace" font-size="12" font-weight="700" fill="#FCD34D">
-<text x="33" y="424">En Java: parámetros</text><text x="293" y="424">En Java: cuerpo { }</text><text x="553" y="424">En Java: return</text>
-</g>
-</svg></div>
-        <p class="cap">Figura 1. Entrada (parámetros) · Proceso (cuerpo del método) · Salida (<code>return</code>).</p>
+        <h2>⚙️ Entrada-Proceso-Salida</h2>
+        <p>Todo método sigue la misma lógica: recibe datos, los procesa y entrega un resultado.</p>
+        <div class="flow">
+          <div class="step"><div class="circ">E</div><div class="st">Entrada</div><div class="sd">Parámetros: <code>int a, int b</code></div></div>
+          <div class="arr">→</div>
+          <div class="step"><div class="circ b">P</div><div class="st">Proceso</div><div class="sd">Cuerpo: <code>a + b</code></div></div>
+          <div class="arr">→</div>
+          <div class="step"><div class="circ g">S</div><div class="st">Salida</div><div class="sd"><code>return</code> o pantalla</div></div>
+        </div>
+        <p class="cap">Figura 1. Un método recibe datos, los procesa y entrega un resultado.</p>
       </div>
 
       <div class="panel">
-        <h2>🔬 Anatomía de un método</h2>
+        <h2>🧩 Anatomía de un método</h2>
         <pre><span class="k">public static int</span> sumar(<span class="k">int</span> a, <span class="k">int</span> b) {
-    <span class="k">return</span> a + b;
+    <span class="k">int</span> suma = a + b;
+    <span class="k">return</span> suma;
 }</pre>
-        <table>
-          <tr><th>Parte</th><th>En el ejemplo</th><th>Función</th></tr>
-          <tr><td>Modificadores</td><td><code>public static</code></td><td>Define el acceso y si pertenece a la clase.</td></tr>
-          <tr><td>Tipo de retorno</td><td><code>int</code></td><td>Tipo de dato que devuelve (<code>void</code> si no devuelve nada).</td></tr>
-          <tr><td>Nombre</td><td><code>sumar</code></td><td>Identifica al método.</td></tr>
-          <tr><td>Parámetros</td><td><code>int a, int b</code></td><td>Datos de entrada.</td></tr>
-          <tr><td>Cuerpo</td><td><code>{ ... }</code></td><td>Instrucciones que ejecuta.</td></tr>
+        <table style="margin-top:14px">
+          <tr><th>Parte</th><th>En el ejemplo</th><th>Qué indica</th></tr>
+          <tr><td>Modificadores</td><td><code>public static</code></td><td>Quién puede usarlo y que se llama sin crear un objeto</td></tr>
+          <tr><td>Tipo de retorno</td><td><code>int</code></td><td>Tipo del valor que devuelve (<code>void</code> si no devuelve nada)</td></tr>
+          <tr><td>Nombre</td><td><code>sumar</code></td><td>Identificador con el que se invoca</td></tr>
+          <tr><td>Parámetros</td><td><code>int a, int b</code></td><td>Datos de entrada que recibe</td></tr>
+          <tr><td>Cuerpo</td><td><code>{ ... }</code></td><td>Instrucciones que ejecuta</td></tr>
+          <tr><td>Retorno</td><td><code>return suma;</code></td><td>Entrega el resultado a quien lo llamó</td></tr>
         </table>
       </div>
 
       <div class="panel">
-        <h2>🚫 Métodos <code>void</code></h2>
-        <p>No devuelven ningún valor: <b>ejecutan una acción</b>.</p>
+        <h2>🔇 Métodos <code>void</code></h2>
+        <p>Un método <code>void</code> ejecuta una acción (mostrar, imprimir, modificar) y no devuelve ningún valor.</p>
         <pre><span class="k">public static void</span> mostrarSuma(<span class="k">int</span> a, <span class="k">int</span> b) {
     System.out.println(<span class="s">"Suma: "</span> + (a + b));
-}</pre>
+}
+
+<span class="c">// Uso</span>
+mostrarSuma(3, 4);          <span class="c">// imprime: Suma: 7</span></pre>
       </div>
 
       <div class="panel">
-        <h2>🔁 Métodos con <code>return</code></h2>
-        <p>Devuelven un valor que puede <b>guardarse o usarse</b> en otra parte del programa.</p>
+        <h2>📤 Métodos con <code>return</code></h2>
+        <p>Un método con <code>return</code> calcula un valor y lo entrega a quien lo invocó, para guardarlo en una variable o usarlo en otra operación.</p>
         <pre><span class="k">public static int</span> multiplicar(<span class="k">int</span> a, <span class="k">int</span> b) {
     <span class="k">return</span> a * b;
 }
@@ -376,6 +270,8 @@
         <pre>📦 ALP-2026-G2-
  ┣ 📂 reposit
  ┃ ┗ 📂 assets
+ ┃   ┣ 📜 banner.svg
+ ┃   ┣ 📜 franja.svg
  ┃   ┗ 📜 readme.svg
  ┣ 📂 Docs
  ┃ ┣ 📂 CLASE1
